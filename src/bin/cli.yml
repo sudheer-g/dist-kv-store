@@ -1,0 +1,20 @@
+  name: kvs
+  version: "0.1"
+  author: Sudheer G. <bharadwaj.sudheer@gmail.com>
+  about: A Key Value Store
+  subcommands:
+      set:
+          about: "Set a key-value pair"
+          args:
+              key:
+                  help: "The key to set"
+                  required: true
+              value:
+                  help: "The value to set"
+                  required: true
+      get:
+          about: "Get the value for a key"
+          args:
+              index:
+                  help: "The key to retrieve"
+                  required: true
